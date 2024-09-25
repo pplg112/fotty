@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // เชื่อมต่อฐานข้อมูล PostgreSQL 
-    $conn = pg_connect("host=localhost dbname=your_database user=your_user password=your_password");
+    $conn = pg_connect("host=172.16.0.2 dbname=singup_fotty user=usename password=password");
 
     // ตรวจสอบการเชื่อมต่อ
     if (!$conn) {
