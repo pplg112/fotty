@@ -1,0 +1,90 @@
+﻿/* style.css - ธีมฤดูหนาว */
+
+body {
+    font-family: 'Open Sans', sans-serif; /* เลือกฟอนต์ที่ดูอบอุ่น */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* สีพื้นหลังอ่อนๆ */
+    color: #333;
+}
+
+header {
+    background-color: #e0ffff; /* สีฟ้าอ่อน */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+h1 {
+    margin: 0;
+    color: #008080; /* สีเขียวอมฟ้า */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+
+nav a:hover {
+    color: #008080;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* เพิ่มสไตล์สำหรับสินค้าแต่ละรายการใน .product-list */
+.product-list > div {
+    /* ... */ 
+    background-color: #f9f9f9; /* สีพื้นหลังสินค้า */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+
+.product-list > div:hover {
+    transform: translateY(-5px); /* ยกขึ้นเล็กน้อยเมื่อ hover */
+}
+
+footer {
+    background-color: #e0ffff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+

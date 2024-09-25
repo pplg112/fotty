@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotty Shop</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<?php
+session_start(); // เริ่ม session
+
+// ตรวจสอบว่ามี session หรือไม่
+if (!isset($_SESSION['username'])) {
+    // ถ้าไม่มี ให้เปลี่ยนเส้นทางไปยังหน้า login.html
+    header("Location: login.html");
+    exit();
+}
+?>
+
+    <header>
+        <h1>Fotty Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">สินค้าทั้งหมด</a></li>
+                <li><a href="#">โปรโมชั่น</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2>สินค้าแนะนำ</h2>
+            <div class="product-list">
+                </div>
+        </section>
+
+        <section class="promotions">
+            <h2>โปรโมชั่น</h2>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fotty Shop</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>

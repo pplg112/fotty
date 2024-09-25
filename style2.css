@@ -1,0 +1,94 @@
+﻿/* style.css */
+
+/* ... สไตล์อื่นๆ ... */
+
+/* สไตล์สำหรับหน้าลงทะเบียน */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8; 
+    font-family: 'Open Sans', sans-serif; 
+    /* เพิ่มรูปพื้นหลัง */
+    background-image: url('path/to/your/winter-background.jpg'); /* ใส่ path ไปยังรูปภาพพื้นหลังของคุณ */
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px; /* ปรับ border-radius ให้โค้งมนขึ้น */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มความเข้มของเงา */
+    padding: 50px; /* เพิ่ม padding */
+    width: 400px; /* เพิ่มความกว้าง */
+    border: none; /* ลบเส้นขอบ */
+    /* เพิ่มความโปร่งใส */
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+    color: #333; 
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.5em; /* เพิ่มขนาดตัวอักษร */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ตัวอักษร */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px; /* ปรับ border-radius ให้โค้งมนขึ้น */
+    padding: 12px; /* เพิ่ม padding */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่าง */
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+    /* เพิ่ม transition */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* เปลี่ยนสีขอบเมื่อ focus */
+    outline: none; /* ลบ outline */
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #007bff, #0056b3); /* ปรับเฉดสี */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px; /* ปรับ border-radius ให้โค้งมนขึ้น */
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+    font-family: 'Open Sans', sans-serif; 
+    /* เพิ่ม transition */
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to right, #0056b3, #003d80); /* เปลี่ยนสีเมื่อ hover */
+}
+
+p {
+    text-align: center;
+    margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
+    color: #666; 
+}
+
+p a {
+    color: #007bff; 
+    text-decoration: none;
+    /* เพิ่ม transition */
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #0056b3; /* เปลี่ยนสีเมื่อ hover */
+    text-decoration: underline;
+}
